@@ -6,7 +6,7 @@
 <body>
 <?php
 ini_set("display_errors", "1");
-$uploaddir = 'C:\Users\mnsoft\Documents\GitHub\HYUNDAI_image_upload\upload\file\\';
+$uploaddir = './upload\file\\';
 $uploadfile = $uploaddir.basename($_FILES['userfile']['name']);
 echo '<pre>';
 if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
